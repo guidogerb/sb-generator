@@ -1,0 +1,8 @@
+create table userRecord (
+    id SERIAL PRIMARY KEY,
+    last_name VARCHAR NOT NULL,
+    first_name VARCHAR NOT NULL,
+    email VARCHAR UNIQUE NOT NULL,
+    uid_ VARCHAR UNIQUE,
+    date_created TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
